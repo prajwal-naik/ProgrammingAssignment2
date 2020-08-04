@@ -1,8 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+#These function find the inverse of a matrix. 
+#However, since the processing of inverting a matrix is not resource friendly, the functions tcashe thevalue of the inverse for future use
 
-## Write a short comment describing this function
-
+#This function creates a special "matrix" object that can cache it's inverse
 makeCacheMatrix <- function(x = matrix()) 
 {
         inv<-matrix()
@@ -18,8 +17,7 @@ makeCacheMatrix <- function(x = matrix())
 }
 
 
-## Write a short comment describing this function
-
+#This function checks if the inverse exists in cache. Else it finds it's inverse.
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         inv<-x$getinverse()
